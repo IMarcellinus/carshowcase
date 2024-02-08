@@ -13,6 +13,8 @@ export interface CustomButtonProps {
 export interface SearchMenuFacturerProps {
   menuFacturer: string;
   setMenuFacturer: (menuFacturer: string) => void;
+  selected: string;
+  setSelected: (selected: string) => void; 
 }
 
 export interface CarProps {
@@ -61,4 +63,5 @@ export interface CustomFilterProps {
 export interface ShowMoreProps {
   pageNumber: number;
   isNext: boolean;
+  setLimit: (limit: number) => void;
 }

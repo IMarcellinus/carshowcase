@@ -7,8 +7,8 @@ import { useState, Fragment } from "react";
 import { menufacturers } from "@/contants";
 
 function SearchMenuFacturer({
-  menuFacturer,
-  setMenuFacturer,
+  selected,
+  setSelected,
 }: SearchMenuFacturerProps) {
   const [query, setQuery] = useState("");
   const filteredMenuFacturers =
@@ -23,7 +23,7 @@ function SearchMenuFacturer({
 
   return (
     <div className="search-menufacturer">
-      <Combobox value={menuFacturer} onChange={setMenuFacturer}>
+      <Combobox value={selected} onChange={setSelected}>
         <div className="relative w-full">
           <Combobox.Button className="absolute top-[14px]">
             <Image
