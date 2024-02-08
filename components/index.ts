@@ -5,13 +5,17 @@ import Footer from './Footer';
 import SearchBar from './SearchBar';
 import CustomFilter from './CustomFilter';
 import SearchMenuFacturer from './SearchMenuFacturer';
+import CarCard from './CarCard';
+import CarDetails from './CarDetails';
 
 export {
+    CarCard,
     Hero,
     CustomButton,
     CustomFilter,
     SearchBar,
     SearchMenuFacturer,
     Navbar,
-    Footer
+    Footer,
+    CarDetails,
 }
