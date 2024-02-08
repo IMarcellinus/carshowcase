@@ -11,8 +11,8 @@ export interface CustomButtonProps {
 }
 
 export interface SearchMenuFacturerProps {
-    menuFacturer: string;
-    setMenuFacturer: (menuFacturer: string) => void;
+  menuFacturer: string;
+  setMenuFacturer: (menuFacturer: string) => void;
 }
 
 export interface CarProps {
@@ -31,15 +31,34 @@ export interface CarProps {
 }
 
 export interface CarDetailsProps {
-    isOpen: boolean;
-    closeModal: () => void;
-    car: CarProps;
+  isOpen: boolean;
+  closeModal: () => void;
+  car: CarProps;
 }
 
 export interface FilterProps {
-  menufacturer: string,
-  year: number,
-  fuel: string,
-    limit: number,
-    model: string,
+  manufacturer: string;
+  year: number;
+  model: string;
+  limit: number;
+  fuel: string;
+}
+
+export interface HomeProps {
+  searchParams: FilterProps;
+}
+
+export interface OptionsProps {
+  title: string;
+  value: string;
+}
+
+export interface CustomFilterProps {
+  title: string;
+  options: OptionsProps[];
+}
+
+export interface ShowMoreProps {
+  pageNumber: number;
+  isNext: boolean;
 }
